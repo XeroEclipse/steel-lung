@@ -347,29 +347,29 @@ public class Rooms {
 
 	public int takeInput(Scanner playerInput) {
 
-        System.out.println("What do you do:");
+        speaker("What do you do (Type N/E/S/W to move through each rooms):");
 
         String input = playerInput.nextLine();
 
-        if(input.equals("n")) {
+        if(input.equalsIgnoreCase("n")) {
 
             return this.gateNorth;
 
         }
 
-        if(input.equals("s")) {
+        if(input.equalsIgnoreCase("s")) {
 
             return this.gateSouth;
 
         }
 
-        if(input.equals("e")) {
+        if(input.equalsIgnoreCase("e")) {
 
             return this.gateEast;
 
         }
 
-        if(input.equals("w")) {
+        if(input.equalsIgnoreCase("w")) {
 
             return this.gateWest;
 
